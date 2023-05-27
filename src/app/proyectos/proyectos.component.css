@@ -1,100 +1,93 @@
-body{
-    overflow: hidden,
+body {
+  overflow: hidden;
 }
 .main-container {
-    display: flex;
-    flex-direction: column;
-    color: white;
-    gap: 20px;
-    margin-top: 2rem;
-    animation: _ngcontent-ttq-c16_fadeInAnimation ease 1s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    background-color: rgb(40, 41, 43);
-    border-radius: 20px;
-    padding: 30px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  gap: 20px;
+  margin-top: 2rem;
+  animation: _ngcontent-ttq-c16_fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  background-color: rgb(40, 41, 43);
+  border-radius: 20px;
+  padding: 30px;
 }
 
-
-.bottom-container{
-    display: grid;
-    gap: 30px;
-    grid-template-columns: repeat(1, 1fr);
-    place-content: center;
+.bottom-container {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(1, 1fr);
+  place-content: center;
 }
-@media (min-width: 920px) { 
-    .bottom-container{
-        grid-template-columns: repeat(2, 1fr);
-        
-    }
-    
+@media (min-width: 920px) {
+  .bottom-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
-@media (min-width: 1400px) { 
-    .bottom-container{
-        grid-template-columns: repeat(3, 1fr);
-
-    }
-    
+@media (min-width: 1400px) {
+  .bottom-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .bottom-container img {
-    width: 100%;
+  width: 100%;
+  height: 260px;
+  /* object-fit: contain; */
 }
 
-h1{
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 30px;
-    color: rgb(87, 91, 95);
-    font-size: 8vw;
+h1 {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  color: rgb(87, 91, 95);
+  font-size: 8vw;
+}
+h2 {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  color: rgb(87, 91, 95);
 
+  font-size: 4vw;
 }
-h2{
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 30px;
-    color: rgb(87, 91, 95);
-
-
-    font-size: 4vw; 
+h3 {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: -15px;
+  color: rgb(87, 91, 95);
+  font-size: 2rem;
+  transition: 0.3s;
 }
-h3{
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: -15px;
-    color: rgb(87, 91, 95);
-    font-size: 2rem;
-    transition: 0.3s;
+p {
+  text-align: center;
+  transition: 0.3s;
 }
-p{
-    text-align: center;
-    transition: 0.3s;
+a {
+  color: rgb(87, 91, 95);
+  text-decoration: none;
+  transition: 0.3s;
 }
-a{
-    color: rgb(87, 91, 95);
-    text-decoration: none;
-    transition: 0.3s;
+.card {
+  padding: 10px;
+  border: solid 2px;
+  color: rgb(87, 91, 95);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
-.card{
-    padding: 10px;
-    border: solid 2px;
-    color: rgb(87, 91, 95);
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
-
 
 .card:hover {
-    color: rgb(255, 105, 0);
-    border: solid 2px rgb(255, 105, 0);
+  color: rgb(255, 105, 0);
+  border: solid 2px rgb(255, 105, 0);
 }
 
-
 @keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
